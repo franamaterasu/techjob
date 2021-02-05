@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechJobs</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@300;400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+  <header class="header">
+    <h1 id="headerLogo" class="header__logo">TechJob</h1>
+    <input id="headerSearch" class="header__search" type="text" placeholder="Search by job title or company name..." />
+    <nav class="header__nav">
+      <li id="favouritesLink" class="header__nav-item">
+        <i class="header__nav-icon fas fa-heart"></i>
+      </li>
+      <li id="homeLink" class="header__nav-item">
+        <i class="header__nav-icon fas fa-ellipsis-h"></i>
+      </li>
+    </nav>
+  </header>
+  <section id="homePage" class="home page">
+    <section id="counter" class="home__counter counter">
+      <p id="counterText" class="home__counter-text counter__text"></p>
+    </section>
+    <main id="listJob" class="list-job"></main>
+  </section>
+  <section id="favouritePage" class="favourites page list-job">
+  </section>
+  <section id="inidividualJob" class="individual-job page"></section>
+  <section id="modal" class="modal">
+    <section id="modalContainer" class="modal__container">
+      <i id="modalIcon"></i>
+      <section id="modalInfo" class="modal__info">
+        <p id="modalText" class="modal__info-text"></p>
+      </section>
+      <footer class="modal__footer">
+        <button id="modalButton" class="modal__button">Close</button>
+      </footer>
+    </section>
+  </section>
+</body>
+<script src="js/main.js"></script>
+</html>

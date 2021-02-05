@@ -1,0 +1,10 @@
+.page {
+  pointer-events: none;
+  display: none;
+  min-height: calc(100vh - 126px);
+
+  &--active {
+    display: block;
+    pointer-events: all;
+  }
+}
